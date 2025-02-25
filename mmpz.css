@@ -1,0 +1,53 @@
+
+h1 {
+    color: darkblue;         /* Color del texto */
+    font-size: 36px;         /* Tamaño del texto */
+    text-align: center;      /* Centrar el título */
+    font-family: Arial, sans-serif;  /* Tipo de letra */
+    text-transform: uppercase;  /* Convertir el texto a mayúsculas */
+    border-bottom: 3px solid gray; /* Línea debajo del título */
+    padding-bottom: 10px; /* Espacio entre el texto y la línea */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.lista-amigos {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    width: 50%;
+    margin: auto;
+}
+
+.lista-amigos li {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen {
+    display: none;
+    width: 150px;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .nombre + .imagen {
+    display: block;
+}
